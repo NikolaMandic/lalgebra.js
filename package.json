@@ -1,0 +1,26 @@
+{
+  "name": "lalgebra",
+  "version": "1.0.0",
+  "description": "linear algebra function collection",
+  "main": "lalgebra.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NikolaMandic/lalgebra.js.git"
+  },
+  "keywords": [
+    "linear",
+    "algebra",
+    "math",
+    "vector",
+    "matrix"
+  ],
+  "author": "Nikola Mandic",
+  "license": "Mit",
+  "bugs": {
+    "url": "https://github.com/NikolaMandic/lalgebra.js/issues"
+  },
+  "homepage": "https://github.com/NikolaMandic/lalgebra.js"
+}
