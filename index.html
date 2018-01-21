@@ -296,7 +296,8 @@
   </div>
   
 
-  <p>This function initializes matrix</p>
+  <p>Initializes multidimensional array
+first argument is the dimensions. Second is the function that will provide initialization value</p>
 
 
   <div class='pre p1 fill-light mt0'>matrixe(a: any, init: any): <a href="#matrix">matrix</a></div>
@@ -384,10 +385,11 @@
   </div>
   
 
-  <p>This function</p>
+  <p>Initializes multidimensional array
+first argument is x and second is y dimension. Third argumentis the function that will provide initialization value and that functions recieves i,j as parameters</p>
 
 
-  <div class='pre p1 fill-light mt0'>matrix(a: any, b: any, init: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>matrix(a: any, b: any, init: any): <a href="#matrix">matrix</a></div>
   
   
 
@@ -426,15 +428,6 @@
           
         </div>
       
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
-          </div>
-          
-        </div>
-      
     </div>
   
 
@@ -443,8 +436,16 @@
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="#matrix">matrix</a></code>:
+        like [
+[
+0,0,0
+]
+,
+[
+0,0,0
+]
+]
 
       
     
