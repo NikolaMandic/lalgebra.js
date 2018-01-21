@@ -1,5 +1,5 @@
 {
-  "name": "lalgebra",
+  "name": "lgebra",
   "version": "1.0.0",
   "description": "linear algebra function collection",
   "main": "lalgebra.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NikolaMandic/lalgebra.js.git"
+    "url": "https://github.com/NikolaMandic/lgebra.js.git"
   },
   "keywords": [
     "linear",
@@ -17,10 +17,10 @@
     "vector",
     "matrix"
   ],
-  "author": "Nikola Mandic",
+  "author": "nikolam",
   "license": "Mit",
   "bugs": {
-    "url": "https://github.com/NikolaMandic/lalgebra.js/issues"
+    "url": "https://github.com/NikolaMandic/lgebra.js/issues"
   },
-  "homepage": "https://github.com/NikolaMandic/lalgebra.js"
+  "homepage": "https://github.com/NikolaMandic/lgebra.js"
 }
