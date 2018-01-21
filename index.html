@@ -386,7 +386,7 @@ first argument is the dimensions. Second is the function that will provide initi
   
 
   <p>Initializes multidimensional array
-first argument is x and second is y dimension. Third argumentis the function that will provide initialization value and that functions recieves i,j as parameters</p>
+first argument is x and second is y dimension. Third argumentis the function that will provide initialization value and that functions recieves i,j as parameters.</p>
 
 
   <div class='pre p1 fill-light mt0'>matrix(a: any, b: any, init: any): <a href="#matrix">matrix</a></div>
@@ -478,10 +478,10 @@ first argument is x and second is y dimension. Third argumentis the function tha
   </div>
   
 
-  <p>This function</p>
+  <p>Dot product of two vectors</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecMul(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecMul(a: any, b: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
   
   
 
@@ -512,15 +512,6 @@ first argument is x and second is y dimension. Third argumentis the function tha
           
         </div>
       
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
-          </div>
-          
-        </div>
-      
     </div>
   
 
@@ -530,7 +521,9 @@ first argument is x and second is y dimension. Third argumentis the function tha
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+        1
+<em>3+2</em>
+4
 
       
     
@@ -563,10 +556,10 @@ first argument is x and second is y dimension. Third argumentis the function tha
   </div>
   
 
-  <p>This function</p>
+  <p>Dot product of two vectors</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecMul(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecMul(a: any, b: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
   
   
 
@@ -597,15 +590,6 @@ first argument is x and second is y dimension. Third argumentis the function tha
           
         </div>
       
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
-          </div>
-          
-        </div>
-      
     </div>
   
 
@@ -615,7 +599,9 @@ first argument is x and second is y dimension. Third argumentis the function tha
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+        1
+<em>3+2</em>
+4
 
       
     
@@ -648,10 +634,10 @@ first argument is x and second is y dimension. Third argumentis the function tha
   </div>
   
 
-  <p>This function</p>
+  <p>Elementwise product</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecMule(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecMule(a: any, b: any, array1: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, array2: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -684,9 +670,16 @@ first argument is x and second is y dimension. Third argumentis the function tha
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
+            <span class='code bold'>array1</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array2</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
           </div>
           
         </div>
@@ -699,8 +692,10 @@ first argument is x and second is y dimension. Third argumentis the function tha
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        a11
+<em>a21,a12</em>
+a22...
 
       
     
@@ -733,10 +728,10 @@ first argument is x and second is y dimension. Third argumentis the function tha
   </div>
   
 
-  <p>This function</p>
+  <p>Add vectors elementwise</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecAdd(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecAdd(a: any, b: any, array1: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, array2: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -769,9 +764,16 @@ first argument is x and second is y dimension. Third argumentis the function tha
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
+            <span class='code bold'>array1</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array2</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
           </div>
           
         </div>
@@ -784,8 +786,8 @@ first argument is x and second is y dimension. Third argumentis the function tha
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        a11+a21,a12+a22...
 
       
     
@@ -818,10 +820,10 @@ first argument is x and second is y dimension. Third argumentis the function tha
   </div>
   
 
-  <p>This function</p>
+  <p>Subtract vectors elementwise</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecSub(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecSub(a: any, b: any, array1: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, array2: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -854,9 +856,16 @@ first argument is x and second is y dimension. Third argumentis the function tha
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
+            <span class='code bold'>array1</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array2</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
           </div>
           
         </div>
@@ -869,8 +878,8 @@ first argument is x and second is y dimension. Third argumentis the function tha
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        a11-a21,a12-a22...
 
       
     
@@ -903,10 +912,10 @@ first argument is x and second is y dimension. Third argumentis the function tha
   </div>
   
 
-  <p>This function</p>
+  <p>Divide vector by scalar</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecDivs(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecDivs(a: any, b: any, array: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, scalar: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -939,9 +948,16 @@ first argument is x and second is y dimension. Third argumentis the function tha
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>scalar</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
           </div>
           
         </div>
@@ -954,8 +970,12 @@ first argument is x and second is y dimension. Third argumentis the function tha
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        array
+[
+i
+]
+/scalar
 
       
     
@@ -988,10 +1008,10 @@ first argument is x and second is y dimension. Third argumentis the function tha
   </div>
   
 
-  <p>This function</p>
+  <p>Add scalar to vector elementwise</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecAdds(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecAdds(a: any, b: any, array: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, scalar: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -1024,9 +1044,16 @@ first argument is x and second is y dimension. Third argumentis the function tha
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>scalar</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
           </div>
           
         </div>
@@ -1039,8 +1066,16 @@ first argument is x and second is y dimension. Third argumentis the function tha
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        [array
+[
+0
+]
++scalar,array
+[
+1
+]
++scalar...]
 
       
     
@@ -1073,10 +1108,10 @@ first argument is x and second is y dimension. Third argumentis the function tha
   </div>
   
 
-  <p>This function</p>
+  <p>Euclidian norm of a vector</p>
 
 
-  <div class='pre p1 fill-light mt0'>norm(a: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>norm(a: any, vec1: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
   
   
 
@@ -1101,9 +1136,8 @@ first argument is x and second is y dimension. Third argumentis the function tha
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
+            <span class='code bold'>vec1</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
           </div>
           
         </div>
@@ -1117,7 +1151,7 @@ first argument is x and second is y dimension. Third argumentis the function tha
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+        euclidian norm
 
       
     
@@ -1150,7 +1184,7 @@ first argument is x and second is y dimension. Third argumentis the function tha
   </div>
   
 
-  <p>This function</p>
+  <p>Normalize vector with euclidian norm</p>
 
 
   <div class='pre p1 fill-light mt0'>n</div>
