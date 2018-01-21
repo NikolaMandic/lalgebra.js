@@ -1,12 +1,14 @@
 /**
- * This function initializes matrix
+ * Initializes multidimensional array
+ * first argument is the dimensions. Second is the function that will provide initialization value
 * @param {array,function} like [5,3,1],_.constant(0)
 * @returns {matrix}  like [[0,0,0,0,0],[0,0,0],[0]]
 */
 matrixe=(a,init)=>_.map(a,(i)=>_.times(i,()=>init(i)))
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Initializes multidimensional array
+ * first argument is x and second is y dimension. Third argumentis the function that will provide initialization value and that functions recieves i,j as parameters
+* @param {number,number,function} like 2,3,_.constant(0)
+* @returns {matrix}  like [[0,0,0],[0,0,0]]
 */
 matrix=(a,b,init)=>_.times(a,(i)=>_.times(b,(j)=>init(i,j)))
 /** This function
