@@ -61,77 +61,78 @@ norm = (a)=> Math.sqrt(_.reduce(_.zipWith(a,a,_.multiply),_.add));
 * @returns {number} that number, plus one.
 */
 n=normalize=(a)=>vecDivs(a,norm(a)||1)
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Elementwise divide
+* @param {array} vec1
+* @param {array} vec2
+* @returns {array} vec1[i]/vec2[i]
 */
 vecDiv=(a,b)=>_.zipWith(a,b,_.divide);
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Multiply each element of a vec1 with a scalar s
+* @param {array} vec1
+* @param {number} s
+* @returns {array} vec1[i]*s
 */
 vecMuls=(a,b)=>_.map(a,(v)=>v*b)
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Transpose a matrix
+* @param {array} matrix like [[0,1,2],[3,4,5]]
+* @returns {array} [[0,3],[1,4],[2,5]]
 */
 tr = (a)=>_.spread(_.zip)(a)
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Sigmoid function
+* @param {number} t
+* @returns {number} 1/(1+Math.pow(Math.E, -t))
 */
 sigmoid=(t)=>1/(1+Math.pow(Math.E, -t));
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Multiply vector with a matrix
+* @param {array} matrix like [[a11,a12,a13],[a21,a22,a23]]
+* @param {array} vector like [b1,b2,b3]
+* @returns {array} [[a11*b1,a12*b2,a13*b3],[a21*b1,a22*b2,a23*b3]]
 */
 vecMulMat=(a,b)=>_.map(tr(b),(v)=>vecMul(a,v));
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Matrix multiplication
+* @param {array} matrix like [[a11,a12],[a21,a22]]
+* @param {array} matrix like [[b11,b12],[b21,b22]]
+* @returns {array} matrix result
 */
 matMulMat=(a,b)=>_.map(a,(v)=>vecMulMat(v,b))
-
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Adds scalar from each element of a matrix
+* @param {array} matrix like [[a11,a12],[a21,a22]]
+* @param {number} scalar s
+* @returns {array} matrix[i][j]-s
 */
 matAdds=(a,b)=>_.map(a,(v)=>vecAdds(v,b))
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Subtracts scalar from each element of a matrix
+* @param {array} matrix like [[a11,a12],[a21,a22]]
+* @param {number} scalar s
+* @returns {array} matrix[i][j]-s
 */
 matSubs=(a,b)=>_.map(a,(v)=>vecAdds(v,-b))
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Multiplies each element of a matrix with a scalar
+* @param {array} matrix like [[a11,a12],[a21,a22]]
+* @param {number} scalar s
+* @returns {array} matrix[i][j]-s
 */
 matMuls=(a,b)=>_.map(a,(v)=>vecMuls(v,b))
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Divides each element of a matrix with a scalar
+* @param {array} matrix like [[a11,a12],[a21,a22]]
+* @param {number} scalar s
+* @returns {array} matrix[i][j]-s
 */
 matDivs=(a,b)=>_.map(a,(v)=>vecDivs(v,b))
-
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** vector times vector transpose
+* @param {array} vector like [a1,a2,a3]
+* @param {array} vector like [b1,b2,b3]
+* @returns {matrix} [[a1*b1,a2*b1,a3*b1],[a1*b2,a2*b2,a3*b2],[a1*b3,a2*b3,a3*b3]]
 */
 vecMuleVecTr = (a,b)=>_.map(b,(v)=>vecMuls(a,v));
-
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
+/** Add matrix to matrix elementwise. Matrices must be of same dimensions
+* @param {array} matrix like [[a11,a12],[a21,a22]]
+* @param {array} matrix like [[b11,b12],[b21,b22]]
+* @returns {array} matrix result [[a11+b11,a12+b12],[a21+b21,a22+b22]]
 */
 matAddMat=(a,b)=>_.zipWith(a,b,(a,b)=>vecAdd(a,b))
-
-/** This function
-* @param {number} input any number
+/** for each element of a vector take square root of an element
+* @param {array}
 * @returns {number} that number, plus one.
 */
 vecSqrt=(a)=> _.map(a,Math.sqrt)
-/** This function
-* @param {number} input any number
-* @returns {number} that number, plus one.
-*/
-sigmoid=(t)=>1/(1+Math.pow(Math.E, -t));

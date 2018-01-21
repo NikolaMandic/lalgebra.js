@@ -175,16 +175,6 @@
               
                 
                 <li><a
-                  href='#sigmoid'
-                  class="">
-                  sigmoid
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
                   href='#vecmulmat'
                   class="">
                   vecMulMat
@@ -1253,10 +1243,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Elementwise divide</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecDiv(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecDiv(a: any, b: any, vec1: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, vec2: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -1289,9 +1279,16 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
+            <span class='code bold'>vec1</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>vec2</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
           </div>
           
         </div>
@@ -1304,8 +1301,15 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        vec1
+[
+i
+]
+/vec2
+[
+i
+]
 
       
     
@@ -1338,10 +1342,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Multiply each element of a vec1 with a scalar s</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecMuls(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecMuls(a: any, b: any, vec1: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, s: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -1374,9 +1378,16 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
+            <span class='code bold'>vec1</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>s</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
           </div>
           
         </div>
@@ -1389,8 +1400,12 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        vec1
+[
+i
+]
+*s
 
       
     
@@ -1423,10 +1438,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Transpose a matrix</p>
 
 
-  <div class='pre p1 fill-light mt0'>tr(a: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>tr(a: any, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -1451,8 +1466,16 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+0,1,2
+]
+,
+[
+3,4,5
+]
+]
 
           </div>
           
@@ -1466,8 +1489,20 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        [
+[
+0,3
+]
+,
+[
+1,4
+]
+,
+[
+2,5
+]
+]
 
       
     
@@ -1500,87 +1535,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Sigmoid function</p>
 
 
-  <div class='pre p1 fill-light mt0'>sigmoid(t: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>t</span> <code class='quiet'>(any)</code>
-	    
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='sigmoid'>
-      sigmoid
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>This function</p>
-
-
-  <div class='pre p1 fill-light mt0'>sigmoid(t: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>sigmoid(t: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
   
   
 
@@ -1597,17 +1555,8 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>t</span> <code class='quiet'>(any)</code>
+            <span class='code bold'>t</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
 	    
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
           </div>
           
         </div>
@@ -1621,7 +1570,7 @@ i
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+        1/(1+Math.pow(Math.E, -t))
 
       
     
@@ -1654,10 +1603,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Multiply vector with a matrix</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecMulMat(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecMulMat(a: any, b: any, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, vector: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -1690,8 +1639,28 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+a11,a12,a13
+]
+,
+[
+a21,a22,a23
+]
+]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>vector</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like 
+[
+b1,b2,b3
+]
 
           </div>
           
@@ -1705,8 +1674,20 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        [
+[
+a11
+<em>b1,a12</em>
+b2,a13*b3
+]
+,
+[
+a21
+<em>b1,a22</em>
+b2,a23*b3
+]
+]
 
       
     
@@ -1739,10 +1720,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Matrix multiplication</p>
 
 
-  <div class='pre p1 fill-light mt0'>matMulMat(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>matMulMat(a: any, b: any, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -1775,8 +1756,33 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+a11,a12
+]
+,
+[
+a21,a22
+]
+]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+b11,b12
+]
+,
+[
+b21,b22
+]
+]
 
           </div>
           
@@ -1790,8 +1796,8 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        matrix result
 
       
     
@@ -1824,10 +1830,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Adds scalar from each element of a matrix</p>
 
 
-  <div class='pre p1 fill-light mt0'>matAdds(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>matAdds(a: any, b: any, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, scalar: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -1860,8 +1866,25 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+a11,a12
+]
+,
+[
+a21,a22
+]
+]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>scalar</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    s
 
           </div>
           
@@ -1875,8 +1898,10 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        matrix
+<a href="">i</a>
+-s
 
       
     
@@ -1909,10 +1934,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Subtracts scalar from each element of a matrix</p>
 
 
-  <div class='pre p1 fill-light mt0'>matSubs(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>matSubs(a: any, b: any, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, scalar: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -1945,8 +1970,25 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+a11,a12
+]
+,
+[
+a21,a22
+]
+]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>scalar</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    s
 
           </div>
           
@@ -1960,8 +2002,10 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        matrix
+<a href="">i</a>
+-s
 
       
     
@@ -1994,10 +2038,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Multiplies each element of a matrix with a scalar</p>
 
 
-  <div class='pre p1 fill-light mt0'>matMuls(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>matMuls(a: any, b: any, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, scalar: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -2030,8 +2074,25 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+a11,a12
+]
+,
+[
+a21,a22
+]
+]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>scalar</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    s
 
           </div>
           
@@ -2045,8 +2106,10 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        matrix
+<a href="">i</a>
+-s
 
       
     
@@ -2079,10 +2142,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Divides each element of a matrix with a scalar</p>
 
 
-  <div class='pre p1 fill-light mt0'>matDivs(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>matDivs(a: any, b: any, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, scalar: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -2115,8 +2178,25 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+a11,a12
+]
+,
+[
+a21,a22
+]
+]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>scalar</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    s
 
           </div>
           
@@ -2130,8 +2210,10 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        matrix
+<a href="">i</a>
+-s
 
       
     
@@ -2164,10 +2246,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>vector times vector transpose</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecMuleVecTr(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecMuleVecTr(a: any, b: any, vector: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, vector: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="#matrix">matrix</a></div>
   
   
 
@@ -2200,8 +2282,23 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
+            <span class='code bold'>vector</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like 
+[
+a1,a2,a3
+]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>vector</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like 
+[
+b1,b2,b3
+]
 
           </div>
           
@@ -2215,8 +2312,26 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="#matrix">matrix</a></code>:
+        [
+[
+a1
+<em>b1,a2</em>
+b1,a3*b1
+]
+,
+[
+a1
+<em>b2,a2</em>
+b2,a3*b2
+]
+,
+[
+a1
+<em>b3,a2</em>
+b3,a3*b3
+]
+]
 
       
     
@@ -2249,10 +2364,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>Add matrix to matrix elementwise. Matrices must be of same dimensions</p>
 
 
-  <div class='pre p1 fill-light mt0'>matAddMat(a: any, b: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>matAddMat(a: any, b: any, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>, matrix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
   
   
 
@@ -2285,8 +2400,33 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+a11,a12
+]
+,
+[
+a21,a22
+]
+]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>matrix</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    like [
+[
+b11,b12
+]
+,
+[
+b21,b22
+]
+]
 
           </div>
           
@@ -2300,8 +2440,16 @@ i
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
-        that number, plus one.
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        matrix result [
+[
+a11+b11,a12+b12
+]
+,
+[
+a21+b21,a22+b22
+]
+]
 
       
     
@@ -2334,10 +2482,10 @@ i
   </div>
   
 
-  <p>This function</p>
+  <p>for each element of a vector take square root of an element</p>
 
 
-  <div class='pre p1 fill-light mt0'>vecSqrt(a: any, input: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+  <div class='pre p1 fill-light mt0'>vecSqrt(a: any, array: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
   
   
 
@@ -2362,9 +2510,8 @@ i
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>input</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-	    any number
-
+            <span class='code bold'>array</span> <code class='quiet'>(any)</code>
+	    
           </div>
           
         </div>
